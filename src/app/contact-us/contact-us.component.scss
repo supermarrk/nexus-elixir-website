@@ -1,0 +1,61 @@
+.contact-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.contact-us-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-left: 20px;
+}
+
+.contact-us-article {
+    width: 50%;
+    .common-headers, .common-texts {
+        color: #ffffff;
+    }
+}
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.footer-texts {
+    font-family: 'Calibri-Regular';
+    color: #ffffff;
+}
+
+.social-media-icons {
+    filter: brightness(0) invert(1);
+    height: 50px;
+    opacity: 0;
+    scale: 1.2;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: 20vh;
+    animation-range-end: 30vh;
+}
+
+.social-media-links {
+    margin-right: 25px;
+}
+
+.social-medias {
+    margin-top: 30px;
+}

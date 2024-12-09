@@ -1,0 +1,74 @@
+.about-us-section {
+    background: #262626;
+    min-height: auto;
+    padding-bottom: 100px;
+    .common-headers, .common-headers2, .common-texts {
+        span {
+            color: hsl(0 0% 100% / 0.2);
+            background-clip: text;
+            background-repeat: no-repeat;
+            background-size: 0 100%;
+            background-image: linear-gradient(40deg, #8cb3f3, #7a71ff);
+            animation: header-reveal linear forwards;
+            animation-timeline: view();
+        }
+    }
+
+    // .common-headers span {
+    //     animation-range-start: 10vh;
+    //     animation-range-end: 20vh;
+    // }
+
+    // .common-headers2 span {
+    //     animation-range-start: 20vh;
+    //     animation-range-end: 25vh;
+    // }
+
+    // .common-texts span {
+    //     animation-range-start: 25vh;
+    //     animation-range-end: 40vh;
+    // }
+
+    .about-us-article {
+        .common-headers span {
+            animation-range-start: 50px;
+            animation-range-end: 300px;
+        }
+    
+        .common-texts span {
+            animation-range-start: 230px;
+            animation-range-end: 500px;
+        }
+    }
+
+    .services-container {
+        .common-headers span {
+            animation-range-start: 300px;
+            animation-range-end: 350px;
+        }
+
+        .common-headers2 span {
+            animation-range-start: 280px;
+            animation-range-end: 320px;
+        }
+    
+        .common-texts span {
+            animation-range-start: 280px;
+            animation-range-end: 500px;
+        }
+    }
+}
+
+.about-us-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.about-us-article {
+    padding: 100px 0 50px 0;
+    text-align: center;
+}
+
+.services-wrapper {
+    display: flex;
+}

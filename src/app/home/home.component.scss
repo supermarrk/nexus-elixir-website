@@ -1,0 +1,32 @@
+.home-banner {
+    position: relative;
+    height: 100vh;
+}
+
+.home-banners {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tagline-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 999;
+    align-items: center;
+    display: flex;
+    padding: 0 50px;
+}
+
+.tagline-header, .tagline-header2 {
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.tagline-header {
+    font-size: 60px;
+}

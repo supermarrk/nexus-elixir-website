@@ -1,0 +1,10 @@
+<img [class.fixed]="isNavFixed" class="nexus-logo" src="./../../../assets/nexus-logo.png" alt="nexus"/>
+<nav id="main_header" class="header" [class.fixed]="isNavFixed">
+    <ul>
+      <li (click)="goTo('home_section')" [class.active]="activeSection === 'home_section'">Home</li>
+      <li (click)="goTo('about_us_section')" [class.active]="activeSection === 'about_us_section'">About Us</li>
+      <li (click)="goTo('our_team')" [class.active]="activeSection === 'our_team'">Our Team</li>
+      <li (click)="goTo('projects_section')" [class.active]="activeSection === 'projects_section'">Projects</li>
+      <li (click)="goTo('contact_us_section')" [class.active]="activeSection === 'contact_us_section'">Contact Us</li>
+    </ul>
+</nav>

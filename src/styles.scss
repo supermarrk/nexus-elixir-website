@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Calibri-Regular';
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Calibri-Bold';
+}
+
+.common-headers {
+    margin: 0 0 15px 0;
+    font-size: 45px;
+}
+
+.common-headers2 {
+    margin: 0 0 15px 0;
+    font-size: 25px;
+}
+
+.common-texts {
+    margin: 0 0 15px 0;
+    font-size: 25px;
+}
+
+.home-section, .about-us-section, .projects-section, .contact-us-section {
+    min-height: 100vh;
+    position: relative;
+}
+
+/**********
+ANIMATIONS
+***********/
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes header-reveal {
+        to {
+            background-size: 100% 100%;
+        }
+    }
+
+    @keyframes fade-in {
+        to {
+            scale: 1;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade-out {
+        to {
+            scale: 1.2;
+            opacity: 0;
+        }
+    }
+}
+
+
+/***********
+FONT FAMILY
+************/
+@font-face {
+    font-family: 'Calibri-Regular';
+    src: url('./assets/fonts/calibri/calibri-regular.eot'); /* IE9 Compat Modes */
+    src: url('./assets/fonts/calibri/calibri-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        //  url('./assets/fonts/calibri/calibri-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/calibri/calibri-regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./assets/fonts/calibri/calibri-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./assets/fonts/calibri/calibri-regular.svg#marker') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Calibri-Bold';
+    src: url('./assets/fonts/calibri/calibri-bold.eot'); /* IE9 Compat Modes */
+    src: url('./assets/fonts/calibri/calibri-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        //  url('./assets/fonts/calibri/calibri-bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/calibri/calibri-bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./assets/fonts/calibri/calibri-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./assets/fonts/calibri/calibri-bold.svg#marker') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Calibri-Italic';
+    src: url('./assets/fonts/calibri/calibri-italic.eot'); /* IE9 Compat Modes */
+    src: url('./assets/fonts/calibri/calibri-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        //  url('./assets/fonts/calibri/calibri-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/calibri/calibri-italic.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./assets/fonts/calibri/calibri-italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./assets/fonts/calibri/calibri-italic.svg#marker') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Calibri-Bold-Italic';
+    src: url('./assets/fonts/calibri/calibri-bold-italic.eot'); /* IE9 Compat Modes */
+    src: url('./assets/fonts/calibri/calibri-bold-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        //  url('./assets/fonts/calibri/calibri-bold-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/calibri/calibri-bold-italic.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./assets/fonts/calibri/calibri-bold-italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./assets/fonts/calibri/calibri-bold-italic.svg#marker') format('svg'); /* Legacy iOS */
+}
