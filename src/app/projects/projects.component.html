@@ -1,14 +1,17 @@
 <section id="projects_section" class="projects-section">
     <div class="projects-block">
-        <h1 class="common-headers">Our Projects</h1>
+        <h1 class="common-headers">Work Highlights</h1>
         <div class="projects-wrapper">
-            <article class="project-block software-block">
-                <h2 class="common-headers2">Software Solutions</h2>
-                <p class="common-texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-            <article class="project-block hardware-block">
-                <h2 class="common-headers2">Hardware Solutions</h2>
-                <p class="common-texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="common-texts">At <b>Nexus Elixir</b>, we're passionate about creating smart software and reliable hardware that help businesses thrive. From building cutting-edge apps to delivering top-notch hardware solutions, we're all about making things work seamlessly together. Every project we take on reflects our dedication to quality, innovation, and helping our clients succeed.</p>
+            <article class="project-block">
+                <div class="software-card projects-card" (click)="redirectsTo('software')">
+                    <img src="./../../assets/banners/software.jpg" class="projects-img" />
+                    <label class="projects-label">SOFTWARE SOLUTIONS</label>
+                </div>
+                <div class="hardware-card projects-card" (click)="redirectsTo('hardware')">
+                    <img src="./../../assets/banners/hardware.jpg" class="projects-img" />
+                    <label class="projects-label">HARDWARE SERVICES</label>
+                </div>
             </article>
         </div>
     </div>

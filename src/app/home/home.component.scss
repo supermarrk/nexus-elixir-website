@@ -1,6 +1,7 @@
 .home-banner {
     position: relative;
     height: 100vh;
+    background: #262626;
 }
 
 .home-banners {
@@ -8,6 +9,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    animation: fade-zoom-out linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
 }
 
 .tagline-container {
@@ -19,6 +23,9 @@
     align-items: center;
     display: flex;
     padding: 0 50px;
+    animation: fade-out linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
 }
 
 .tagline-header, .tagline-header2 {

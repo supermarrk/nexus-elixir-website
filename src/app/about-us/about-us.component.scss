@@ -1,7 +1,9 @@
 .about-us-section {
     background: #262626;
-    min-height: auto;
     padding-bottom: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     .common-headers, .common-headers2, .common-texts {
         span {
             color: hsl(0 0% 100% / 0.2);
@@ -14,21 +16,6 @@
         }
     }
 
-    // .common-headers span {
-    //     animation-range-start: 10vh;
-    //     animation-range-end: 20vh;
-    // }
-
-    // .common-headers2 span {
-    //     animation-range-start: 20vh;
-    //     animation-range-end: 25vh;
-    // }
-
-    // .common-texts span {
-    //     animation-range-start: 25vh;
-    //     animation-range-end: 40vh;
-    // }
-
     .about-us-article {
         .common-headers span {
             animation-range-start: 50px;
@@ -36,25 +23,26 @@
         }
     
         .common-texts span {
-            animation-range-start: 230px;
-            animation-range-end: 500px;
+            animation-range-start: 250px;
+            animation-range-end: 400px;
         }
     }
 
     .services-container {
+        margin-top: 50px;
         .common-headers span {
-            animation-range-start: 300px;
-            animation-range-end: 350px;
+            animation-range-start: 200px;
+            animation-range-end: 250px;
         }
 
         .common-headers2 span {
-            animation-range-start: 280px;
-            animation-range-end: 320px;
+            animation-range-start: 200px;
+            animation-range-end: 230px;
         }
     
         .common-texts span {
-            animation-range-start: 280px;
-            animation-range-end: 500px;
+            animation-range-start: 200px;
+            animation-range-end: 330px;
         }
     }
 }

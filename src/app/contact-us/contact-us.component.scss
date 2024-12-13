@@ -44,12 +44,6 @@
 .social-media-icons {
     filter: brightness(0) invert(1);
     height: 50px;
-    opacity: 0;
-    scale: 1.2;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range-start: 20vh;
-    animation-range-end: 30vh;
 }
 
 .social-media-links {

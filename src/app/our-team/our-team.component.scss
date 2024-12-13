@@ -1,9 +1,14 @@
+.our-team-section {
+    background: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .team-container {
-    padding: 100px 0;
     position: relative;
     display: flex;
     align-items: flex-start;
-    background: #424242;
     .common-headers, .common-headers2, .common-texts {
         span {
             color: hsl(0 0% 100% / 0.2);
@@ -25,7 +30,7 @@
     
         .common-texts span {
             animation-range-start: 330px;
-            animation-range-end: 500px;
+            animation-range-end: 550px;
             background-image: linear-gradient(40deg, #ffffff, #ffffff);
         }
     }
