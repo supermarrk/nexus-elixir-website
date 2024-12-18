@@ -11,20 +11,20 @@
             background-repeat: no-repeat;
             background-size: 0 100%;
             background-image: linear-gradient(40deg, #8cb3f3, #7a71ff);
-            animation: header-reveal linear forwards;
+            animation: text-reveal linear forwards;
             animation-timeline: view();
         }
     }
 
     .about-us-article {
         .common-headers span {
-            animation-range-start: 50px;
-            animation-range-end: 300px;
+            animation-range-start: 10%;
+            animation-range-end: 15%;
         }
     
         .common-texts span {
-            animation-range-start: 250px;
-            animation-range-end: 400px;
+            animation-range-start: 10%;
+            animation-range-end: 40%;
         }
     }
 
@@ -39,18 +39,18 @@
         margin-top: 50px;
         padding: 0 20px;
         .common-headers span {
-            animation-range-start: 200px;
-            animation-range-end: 250px;
+            animation-range-start: 10%;
+            animation-range-end: 15%;
         }
 
         .common-headers2 span {
-            animation-range-start: 200px;
-            animation-range-end: 230px;
+            animation-range-start: 10%;
+            animation-range-end: 15%;
         }
     
         .common-texts span {
-            animation-range-start: 200px;
-            animation-range-end: 330px;
+            animation-range-start: 10%;
+            animation-range-end: 40%;
         }
     }
 }
