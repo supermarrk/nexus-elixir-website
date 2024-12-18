@@ -35,5 +35,5 @@
 }
 
 .tagline-header {
-    font-size: 60px;
+    font-size: clamp(25px, 3.5vw, 60px);
 }

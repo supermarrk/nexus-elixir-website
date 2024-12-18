@@ -28,8 +28,16 @@
         }
     }
 
+    .service-article {
+        padding-right: 50px;
+        &:last-child {
+            padding: 0;
+        }
+    }
+
     .services-container {
         margin-top: 50px;
+        padding: 0 20px;
         .common-headers span {
             animation-range-start: 200px;
             animation-range-end: 250px;
@@ -50,6 +58,7 @@
 .about-us-wrapper {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .about-us-article {

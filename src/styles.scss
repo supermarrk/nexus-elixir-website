@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 html {
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -19,17 +21,17 @@ h1, h2, h3, h4 {
 
 .common-headers {
     margin: 0 0 15px 0;
-    font-size: 45px;
+    font-size: clamp(30px, 3vw, 45px);
 }
 
 .common-headers2 {
     margin: 0 0 15px 0;
-    font-size: 25px;
+    font-size: clamp(20px, 2vw, 25px);
 }
 
 .common-texts {
     margin: 0 0 15px 0;
-    font-size: 25px;
+    font-size: clamp(20px, 1.5vw, 25px);
     b {
         font-family: 'Calibri-Bold';
     }

@@ -1,3 +1,7 @@
+.projects-section {
+    padding: 50px 0;
+}
+
 .projects-block {
     max-width: 80%;
 }
@@ -34,8 +38,8 @@
 
 .projects-card {
     position: relative;
-    height: 500px;
-    width: 500px;
+    width: 25vw;
+    height: 25vw;
     overflow: hidden;
     cursor: pointer;
     display: flex;
@@ -69,7 +73,7 @@
 }
 
 .projects-label {
-    font-size: 40px;
+    font-size: clamp(16px, 2.5vw, 40px);
     letter-spacing: 5px;
     color: #ffffff;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
