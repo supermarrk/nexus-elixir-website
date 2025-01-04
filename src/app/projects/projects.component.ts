@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ROUTES } from '../constants/constants';
 
 @Component({
   selector: 'app-projects',
@@ -13,6 +14,6 @@ export class ProjectsComponent {
   constructor(private router: Router) {}
 
   redirectsTo(page: string) {
-    this.router.navigate(['/projects/' + page]);
+    this.router.navigate([ROUTES.PROJECTS + page]);
   }
 }

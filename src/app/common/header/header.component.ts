@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angular/core';
+import { EVENT, HOME_SECTION, HOME_SECTION_ID, SECTION, SMOOTH, WINDOW_SCROLL } from '../../constants/constants';
 
 @Component({
   selector: 'app-header',
@@ -10,19 +11,19 @@ import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angul
 })
 export class HeaderComponent implements OnInit {
   isNavFixed = false;
-  activeSection: string = 'home_section';
+  activeSection: string = HOME_SECTION;
 
   ngOnInit(): void {
     this.observeSections();
   }
 
   goTo(page: string): void {
-    document.getElementById(page)?.scrollIntoView({behavior: "smooth"});
+    document.getElementById(page)?.scrollIntoView({behavior: SMOOTH});
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener(WINDOW_SCROLL, [EVENT])
   onWindowScroll() {
-    const element = document.querySelector('#home_section');
+    const element = document.querySelector(HOME_SECTION_ID);
     if (element) {
       const rect = element.getBoundingClientRect(); // Get the element's position relative to the viewport
       let max = window.innerHeight;
@@ -31,7 +32,7 @@ export class HeaderComponent implements OnInit {
   }
 
   observeSections(): void {
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll(SECTION);
     const options = {
       root: null,
       threshold: 0.4, // Trigger when 40% of the section is visible
