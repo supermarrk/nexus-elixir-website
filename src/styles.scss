@@ -75,6 +75,234 @@ ANIMATIONS
     }
 }
 
+/****************************************
+MEDIA QUERY FOR MOBILE AND SMALL TABLETS
+*****************************************/
+@media (hover: none) and (pointer: coarse) and (max-width: 819px) {
+    html {
+        overflow-y: hidden;
+    }
+
+    .logo-container {
+        position: fixed;
+        bottom: 0;
+        z-index: 99999;
+        width: calc(20% - 1px);
+        height: 69px;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+    }
+    
+    .nexus-logo {
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        margin: auto !important;
+        height: 70px !important;
+        left: auto !important;
+    }
+
+    .header {
+        background-color: #ffffff !important;
+        &.fixed {
+            width: 100vw !important;
+        }
+
+        ul {
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        li {
+            color: #646464 !important;
+            border-right: 1px solid #646464 !important;
+            text-shadow: none !important;
+            padding: 0 !important;
+            width: 100%;
+            justify-content: center;
+            &.active {
+                color: #0e196e;
+            }
+        }
+    }
+
+    .inner-header {
+        .nexus-logo {
+            position: absolute !important;
+            left: 0 !important;
+            right: 0;
+            margin: auto !important;
+        }
+    }
+
+    .tagline-container {
+        animation: none !important;
+    }
+
+    .tagline-header {
+        text-shadow: 1px 1px 2px #343434 !important;
+    }
+
+    .tagline-header2 {
+        margin-top: 10px !important;
+        font-size: clamp(20px, 2.5vw, 30px) !important;
+        text-shadow: 1px 1px 2px #343434 !important;
+    }
+
+    .home-banners {
+        animation: none !important;
+    }
+
+    .about-us-section .mission-vision-container, .services-container {
+        padding: 0 !important;
+    }
+
+    .projects-section {
+        background-image: none !important;
+        padding: 0 !important;
+    }
+
+    .project-block {
+        display: block !important;
+    }
+
+    .projects-card {
+        margin: 0 auto 20px auto;
+        width: 150px !important;
+        height: 150px !important;
+        .projects-img {
+            transform: translateY(-70%) !important;
+            opacity: 0.5 !important;
+        }
+    }
+
+    .projects-block {
+        max-width: 100% !important;
+        margin: 0 10px;
+    }
+
+    .projects-wrapper {
+        padding: 10px !important;
+    }
+
+    .our-team-section {
+        padding: 10px !important;
+    }
+
+    .team-intro {
+        .common-texts {
+            padding: 0 20px;
+        }
+    }
+
+    .services-wrapper, .mission-vision-wrapper {
+        display: block !important;
+    }
+
+    .about-us-section .service-article, .about-us-section .mission-vision-article {
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .member-img-container {
+        border-radius: 100% !important;
+        width: 100px !important;
+        height: 100px !important;
+        top: -70px !important;
+        margin: 0 10px;
+
+        .member-img {
+            width: 100%;
+        }
+    }
+
+    .member-profile {
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 80px !important;
+        &.left {
+            .member-img-container {
+                right: auto !important;
+            }
+
+            .common-headers2 {
+                padding-right: 0 !important;
+            }
+
+            .common-texts {
+                padding-right: 0 !important;
+            }
+        }
+
+        &.right {
+            .member-img-container {
+                left: auto !important;
+                border-radius: 100% !important;
+                right: 0;
+            }
+
+            .common-headers2 {
+                margin-left: 0 !important;
+            }
+
+            .common-texts {
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    .pos-1 .member-img {
+        margin-left: 0 !important;
+    }
+
+    .pos-2 .member-img {
+        scale: 1 !important;
+    }
+
+    .pos-3 .member-img {
+        margin-left: 0 !important;
+    }
+
+    .pos-4 .member-img {
+        margin-left: 0 !important;
+    }
+
+    .pos-5 .member-img {
+        margin-left: 0 !important;
+    }
+
+    .pos-6 .member-img {
+        margin-left: 0 !important;
+    }
+
+    .pos-7 .member-img {
+        margin-left: 0 !important;
+    }
+
+    .pos-8 .member-img {
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        scale: 1 !important;
+    }
+
+    .member-skills {
+        height: auto !important;
+        border-radius: 100px !important;
+        border: none !important;
+    }
+
+    .contact-us-article {
+        width: 100% !important;
+    }
+
+    .footer-container {
+        bottom: 80px !important;
+        display: block !important;
+    }
+}
 
 /***********
 FONT FAMILY
