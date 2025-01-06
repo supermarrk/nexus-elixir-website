@@ -17,6 +17,10 @@
     }
 
     .about-us-article {
+        p {
+            text-align: justify;
+        }
+
         .common-headers span {
             animation-range-start: 10%;
             animation-range-end: 15%;
@@ -28,14 +32,20 @@
         }
     }
 
-    .service-article {
+    .service-article, .mission-vision-article {
         padding-right: 50px;
+        box-sizing: border-box;
+        width: 50%;
+        p {
+            text-align: justify;
+        }
         &:last-child {
-            padding: 0;
+            padding-right: 0;
+            padding-left: 50px;
         }
     }
 
-    .services-container {
+    .services-container, .core-values-container {
         margin-top: 50px;
         padding: 0 20px;
         .common-headers span {
@@ -53,6 +63,24 @@
             animation-range-end: 40%;
         }
     }
+
+    .mission-vision-container {
+        padding: 0 20px;
+        .common-headers span {
+            animation-range-start: 10%;
+            animation-range-end: 15%;
+        }
+
+        .common-headers2 span {
+            animation-range-start: 10%;
+            animation-range-end: 15%;
+        }
+    
+        .common-texts span {
+            animation-range-start: 10%;
+            animation-range-end: 25%;
+        }
+    }
 }
 
 .about-us-wrapper {
@@ -66,6 +94,23 @@
     text-align: center;
 }
 
-.services-wrapper {
+.services-wrapper, .mission-vision-wrapper {
     display: flex;
+}
+
+.star-container {
+    label {
+        cursor: auto;
+        font-size: clamp(20px, 2vw, 40px);
+        margin-right: 15px;
+    }
+}
+
+.core-values-container {
+    .common-headers {
+        label {
+            cursor: auto;
+            letter-spacing: 10px;
+        }
+    }
 }

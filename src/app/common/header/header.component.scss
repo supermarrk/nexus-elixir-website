@@ -18,6 +18,7 @@
         li {
             color: #646464;
             border-right: 1px solid #646464;
+            text-shadow: none;
         }
     }
     ul {
@@ -37,6 +38,7 @@
         align-items: center;
         display: flex;
         border-right: 1px solid #ffffff;
+        text-shadow: 1px 1px 3px #343434;
         &:last-child {
             border: none;
         }
@@ -45,6 +47,7 @@
             background-image: linear-gradient(90deg, #6056f7, #a165f1);
             background-clip: text;
             background-repeat: no-repeat;
+            text-shadow: none;
         }
     }
 
@@ -52,15 +55,19 @@
 
   .nexus-logo {
     position: absolute;
-    top: 0;
-    height: 125px;
-    left: 20px;
+    top: -250px;
+    bottom: 0;
+    margin: auto;
+    height: 200px;
+    left: 50px;
     z-index: 99999;
     transition: 0.2s ease-in;
-    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 01));
     &.nexus-logo.fixed {
         position: fixed;
         height: 75px;
         left: 30px;
+        top: 0;
+        margin: 0;
+        bottom: auto;
     }
 }
