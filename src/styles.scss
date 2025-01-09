@@ -36,7 +36,7 @@ h1, h2, h3, h4 {
     }
 }
 
-.home-section, .about-us-section, .projects-section, .contact-us-section, .our-team-section {
+.home-section, .about-us-section, .products-section, .contact-us-section, .our-team-section {
     min-height: 100vh;
     position: relative;
 }
@@ -160,7 +160,7 @@ MEDIA QUERY FOR MOBILE AND SMALL TABLETS
         padding: 0 !important;
     }
 
-    .projects-section {
+    .products-section {
         background-image: none !important;
         padding: 0 !important;
     }
@@ -179,12 +179,12 @@ MEDIA QUERY FOR MOBILE AND SMALL TABLETS
         }
     }
 
-    .projects-block {
+    .products-block {
         max-width: 100% !important;
         margin: 0 10px;
     }
 
-    .projects-wrapper {
+    .products-wrapper {
         padding: 10px !important;
     }
 

@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SoftwareComponent } from './software.component';
+import { HardwareComponent } from './hardware.component';
 
 const routes: Routes = [{
-  path: 'projects/software',
-  component: SoftwareComponent,
+  path: 'products/hardware',
+  component: HardwareComponent,
   children: [
     {
-      path: 'projects/software',
-      component: SoftwareComponent
+      path: 'products/hardware',
+      component: HardwareComponent
     }
   ]
 }];
@@ -17,4 +17,4 @@ const routes: Routes = [{
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class SoftwareRoutingModule { }
+export class HardwareRoutingModule { }

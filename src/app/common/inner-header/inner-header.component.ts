@@ -22,6 +22,6 @@ constructor(private router: Router, private currentRouteService: CurrentRouteSer
   }
 
   goToNextPage() {
-    this.router.navigate([ROUTES.PROJECTS + this.nextPage]);
+    this.router.navigate([ROUTES.PRODUCTS + this.nextPage]);
   }
 }

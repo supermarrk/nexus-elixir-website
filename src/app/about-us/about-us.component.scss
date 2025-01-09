@@ -1,9 +1,6 @@
 .about-us-section {
     background: #262626;
     padding-bottom: 100px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
     .common-headers, .common-headers2, .common-texts {
         span {
             color: hsl(0 0% 100% / 0.2);
@@ -32,35 +29,21 @@
         }
     }
 
-    .service-article, .mission-vision-article {
-        padding-right: 50px;
-        box-sizing: border-box;
-        width: 50%;
-        p {
-            text-align: justify;
-        }
-        &:last-child {
-            padding-right: 0;
-            padding-left: 50px;
-        }
-    }
-
-    .services-container, .core-values-container {
-        margin-top: 50px;
+    .core-values-container {
         padding: 0 20px;
         .common-headers span {
             animation-range-start: 10%;
-            animation-range-end: 15%;
+            animation-range-end: 20%;
         }
 
         .common-headers2 span {
             animation-range-start: 10%;
-            animation-range-end: 15%;
+            animation-range-end: 20%;
         }
     
         .common-texts span {
-            animation-range-start: 10%;
-            animation-range-end: 40%;
+            animation-range-start: 15%;
+            animation-range-end: 30%;
         }
     }
 
@@ -83,7 +66,7 @@
     }
 }
 
-.about-us-wrapper {
+.about-us-article, .mission-vision-container, .core-values-container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
@@ -92,26 +75,78 @@
 .about-us-article {
     padding: 100px 0 50px 0;
     text-align: center;
+
+    .common-texts {
+        padding: 0 20px;
+    }
 }
 
-.services-wrapper, .mission-vision-wrapper {
+.mission-vision-container {
+    margin: 50px auto 0 auto;
+}
+
+.mission-vision-article {
+    position: relative;
+    height: 200px;
     display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    justify-content: center;
+    &:last-child {
+        .common-headers {
+            right: 0;
+            left: auto !important;
+        }
+    }    
+    .common-texts {
+        text-align: center;
+        margin: 0;
+        width: 70%;
+    }
+    .common-headers {
+        position: absolute;
+        font-size: clamp(100px, 10vw, 200px);
+        opacity: .2;
+        top: 0;
+        left: 0;
+        margin: 0;
+        line-height: 100px;
+    }
 }
 
 .star-container {
     label {
         cursor: auto;
-        font-size: clamp(20px, 2vw, 40px);
+        font-size: clamp(20px, 4vw, 60px);
         margin-right: 15px;
         font-family: 'Calibri-Bold';
     }
 }
 
 .core-values-container {
+    position: relative;
     .common-headers {
+        font-size: clamp(100px, 10vw, 200px);
+        opacity: 0.2;
+        position: absolute;
+        top: -100px;
+        left: 20px;
         label {
             cursor: auto;
             letter-spacing: 10px;
         }
+    }
+}
+
+.star-container {
+    width: 80%;
+    margin: 50px auto 0 auto;
+    .common-texts {
+        margin: 0;
+    }
+
+    span {
+        display: inline-block;
     }
 }

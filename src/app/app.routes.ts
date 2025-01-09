@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { SoftwareComponent } from './projects/software/software.component';
-import { HardwareComponent } from './projects/hardware/hardware.component';
+import { SoftwareComponent } from './our-products/software/software.component';
+import { HardwareComponent } from './our-products/hardware/hardware.component';
 import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
@@ -9,11 +9,11 @@ export const routes: Routes = [
         component: HomeComponent 
     },
     { 
-        path: 'projects/hardware', 
+        path: 'products/hardware', 
         component: HardwareComponent 
     },
     { 
-        path: 'projects/software', 
+        path: 'products/software', 
         component: SoftwareComponent 
     },
     {

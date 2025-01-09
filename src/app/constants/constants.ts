@@ -10,5 +10,5 @@ export const EVENT = '$event';
 export const WINDOW_SCROLL = 'window:scroll';
 export const ROUTES = {
     HOME: '/',
-    PROJECTS: '/projects/',
+    PRODUCTS: '/products/',
   };
