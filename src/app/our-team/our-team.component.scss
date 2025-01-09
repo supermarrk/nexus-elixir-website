@@ -102,36 +102,6 @@
     }
 }
 
-.member-skills {
-    background: #18122b;
-    padding: 20px;
-    border-radius: 80px;
-    position: relative;
-    z-index: 2;
-    border: 10px solid #c1c1c1;
-    box-sizing: border-box;
-    height: 149px;
-    margin: 0;
-}
-
-.member-skill {
-    color: #ffffff;
-    list-style: none;
-    font-size: clamp(14px, .8vw, 16px);
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    &:last-child {
-        margin-bottom: 0;
-    }
-    &::before {
-        content: "\2756";
-        position: absolute;
-        top: -3px;
-        left: 5px;
-    }
-}
-
 .member-img-container {
     position: absolute;
     top: 0;

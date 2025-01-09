@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 50px 0;
     .common-headers, .common-headers2, .common-texts {
         color: #ffffff;
         text-shadow: 2px 2px 8px rgba(0,0,0,.5);
@@ -18,7 +19,8 @@
 
 .products-wrapper {
     background-color: rgb(255 255 255 / 20%);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 50px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px #000000;
@@ -76,4 +78,93 @@
     cursor: pointer;
     width: 80%;
     text-align: center;
+}
+
+.products-list-item {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .common-headers2 {
+        position: relative;
+        padding-left: 50px;
+    }
+    .custom-ul {
+        background: none;
+        border: none;
+        height: auto;
+        padding-bottom: 0;
+    }
+    .custom-li {
+        font-size: 20px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.product-icons {
+    filter: brightness(0) invert(1);
+    height: 40px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.products-list-container {
+    margin: 50px 0;
+}
+
+.products-list-wrapper {
+    display: flex;
+    margin-bottom: 50px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.projects-container {
+    position: relative;
+    padding-top: 40px;
+}
+
+.project-divider {
+    position: relative;
+    height: 50px;
+    background: url('./../../assets/icons/diamond.png') no-repeat center center / contain;
+    filter: brightness(0) invert(1);
+    margin: 50px 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: calc(50% + 50px);
+        width: 300px;
+        height: 1px;
+        background: #ffffff;
+        bottom: 0;
+        margin: auto;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: calc(50% + 50px);
+        width: 300px;
+        height: 1px;
+        background: #ffffff;
+        bottom: 0;
+        margin: auto;
+    }
+    &.mobile {
+        display: none;
+    }
+    &.sub {
+        height: 20px;
+        &::before {
+            width: 40%;
+            left: calc(50% + 20px);
+        }
+        &::after {
+            width: 40%;
+            right: calc(50% + 20px);
+        }
+    }
 }

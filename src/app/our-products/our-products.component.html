@@ -2,18 +2,84 @@
     <div class="products-block">
         <h1 class="common-headers">Our Products</h1>
         <div class="products-wrapper">
-            <h1 class="common-headers">Work Highlights</h1>
-            <p class="common-texts">At <b>Nexus Elixir Solutions Corporation</b>, we're passionate about creating smart software and reliable hardware that help businesses thrive. From building cutting-edge apps to delivering top-notch IT Services, we're all about making things work seamlessly together. Every project we take on reflects our dedication to quality, innovation, and helping our clients succeed.</p>
-            <article class="project-block">
-                <div class="software-card projects-card" (click)="redirectsTo('software')">
-                    <img src="./../../assets/banners/software.jpg" class="projects-img" />
-                    <label class="projects-label">SOFTWARE SOLUTIONS</label>
+            <p class="common-texts"> At <b>NEXUS ELIXIR SOLUTIONS CORPORATION</b>, we're proud to offer a range of innovative products and services designed to help businesses succeed in today's digital world. From modern IT solutions to tailored support services, we focus on delivering value, efficiency, flexibility and reliability. Our offerings are crafted to meet the unique needs of our clients, empowering them to achieve their goals and stay ahead in a competitive landscape.</p>
+            <div class="products-list-container">
+                <div class="products-list-wrapper">
+                    <div class="products-list-item">
+                        <h2 class="common-headers2"><img src="../../assets/icons/software-service.png" class="product-icons" />Software Solutions</h2>
+                        <ul class="custom-ul">
+                            <li class="custom-li">Creates detailed company profiles tailored to client needs.</li>
+                            <li class="custom-li">Develops custom software applications based on clients' specific requirements.</li>
+                            <li class="custom-li">Upgrades and modernizes existing software applications to align with contemporary technology stacks.</li>
+                        </ul>
+                        <div class="project-divider sub"></div>
+                        <h2 class="common-headers2"><img src="../../assets/icons/man-power.png" class="product-icons" />IT Man Power</h2>
+                        <ul class="custom-ul">
+                            <li class="custom-li">Deploys software engineers and IT specialists to support client projects.</li>
+                        </ul>
+                        <div class="project-divider sub"></div>
+                        <h2 class="common-headers2"><img src="../../assets/icons/software-license.png" class="product-icons" />Software Licenses</h2>
+                        <ul class="custom-ul">
+                            <li class="custom-li">Windows License</li>
+                            <li class="custom-li">Anti-virus</li>
+                            <li class="custom-li">Microsoft Office</li>
+                        </ul>
+                        <div class="project-divider sub"></div>
+                        <h2 class="common-headers2"><img src="../../assets/icons/data-center.png" class="product-icons" />Data Center and Server Room</h2>
+                        <ul class="custom-ul">
+                            <li class="custom-li">Supplies essential resources for data centers and server rooms.</li>
+                        </ul>
+                        <div class="project-divider sub mobile"></div>
+                    </div>
+                    <div class="products-list-item">
+                        <h2 class="common-headers2"><img src="../../assets/icons/it-service.png" class="product-icons" />IT Services</h2>
+                        <ul class="custom-ul">
+                            <li class="custom-li">Starlink Gen 2 and 3
+                                <ul class="custom-ul-2">
+                                    <li class="custom-li-2">Installation of unit including configuration, anti-stow, etc. Monthly Subscription</li>
+                                    <li class="custom-li-2">After-sales support</li>
+                                </ul>
+                            </li>
+                            <li class="custom-li">CCTV
+                                <ul class="custom-ul-2">
+                                    <li class="custom-li-2">Installation of unit including NVR and POE network switch (for IP camera), UTP cables, LAN cables, etc.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="project-divider sub"></div>
+                        <h2 class="common-headers2"><img src="../../assets/icons/peripherals.png" class="product-icons" />Laptop and Peripherals</h2>
+                        <ul class="custom-ul">
+                            <li class="custom-li">Offer a variety of options tailored to the client's needs and budget.</li>
+                            <li class="custom-li">7-day replacement upon receiving the unit.</li>
+                            <li class="custom-li">Warranty</li>
+                            <li class="custom-li">After-sales support</li>
+                        </ul>
+                        <div class="project-divider sub"></div>
+                        <h2 class="common-headers2"><img src="../../assets/icons/network.png" class="product-icons" />In-building Network Services</h2>
+                        <ul class="custom-ul">
+                            <li class="custom-li">Wired Network</li>
+                            <li class="custom-li">Wireless Network</li>
+                            <li class="custom-li">Telephone System</li>
+                            <li class="custom-li">Security Network</li>
+                            <li class="custom-li">IOT Network</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="hardware-card projects-card" (click)="redirectsTo('hardware')">
-                    <img src="./../../assets/banners/hardware.jpg" class="projects-img" />
-                    <label class="projects-label">HARDWARE SERVICES</label>
-                </div>
-            </article>
+            </div>
+            <div class="projects-container">
+                <h1 class="common-headers">Work Highlights</h1>
+                <p class="common-texts">We're passionate about creating smart software and reliable hardware that help businesses thrive. From building cutting-edge apps to delivering top-notch IT Services, we're all about making things work seamlessly together. Every project we take on reflects our dedication to quality, innovation, and helping our clients succeed.</p>
+                <article class="project-block">
+                    <div class="software-card projects-card" (click)="redirectsTo('software')">
+                        <img src="./../../assets/banners/software.jpg" class="projects-img" />
+                        <label class="projects-label">SOFTWARE SOLUTIONS</label>
+                    </div>
+                    <div class="hardware-card projects-card" (click)="redirectsTo('hardware')">
+                        <img src="./../../assets/banners/hardware.jpg" class="projects-img" />
+                        <label class="projects-label">HARDWARE SERVICES</label>
+                    </div>
+                </article>
+            </div>
         </div>
     </div>
 </section>

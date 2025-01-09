@@ -11,11 +11,11 @@ body {
 }
 
 * {
-    font-family: 'Calibri-Regular';
+    font-family: 'Californian-FB';
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Calibri-Bold';
+    font-family: 'Californian-FB-Bold';
 }
 
 .common-headers {
@@ -32,13 +32,43 @@ h1, h2, h3, h4 {
     margin: 0 0 15px 0;
     font-size: clamp(20px, 1.5vw, 25px);
     b {
-        font-family: 'Calibri-Bold';
+        font-family: 'Californian-FB-Bold';
     }
 }
 
 .home-section, .about-us-section, .products-section, .contact-us-section, .our-team-section {
     min-height: 100vh;
     position: relative;
+}
+
+.custom-ul {
+    background: #18122b;
+    padding: 20px;
+    border-radius: 80px;
+    position: relative;
+    z-index: 2;
+    border: 10px solid #c1c1c1;
+    box-sizing: border-box;
+    height: 149px;
+    margin: 0;
+}
+
+.custom-li {
+    color: #ffffff;
+    list-style: none;
+    font-size: clamp(14px, .8vw, 16px);
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &::before {
+        content: "\2756";
+        position: absolute;
+        top: -3px;
+        left: 5px;
+    }
 }
 
 /**********
@@ -123,6 +153,7 @@ MEDIA QUERY FOR MOBILE AND SMALL TABLETS
             padding: 0 !important;
             width: 100%;
             justify-content: center;
+            text-align: center !important;
             &.active {
                 color: #0e196e;
             }
@@ -130,12 +161,21 @@ MEDIA QUERY FOR MOBILE AND SMALL TABLETS
     }
 
     .inner-header {
+        position: fixed !important;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+        background: #ffffff;
         .nexus-logo {
             position: absolute !important;
             left: 0 !important;
             right: 0;
             margin: auto !important;
         }
+    }
+
+    .inner-container {
+        padding-bottom: 80px;
     }
 
     .tagline-container {
@@ -165,8 +205,8 @@ MEDIA QUERY FOR MOBILE AND SMALL TABLETS
         padding: 0 !important;
     }
 
-    .project-block {
-        display: block !important;
+    .software-card {
+        margin-right: 20px !important;
     }
 
     .projects-card {
@@ -182,10 +222,25 @@ MEDIA QUERY FOR MOBILE AND SMALL TABLETS
     .products-block {
         max-width: 100% !important;
         margin: 0 10px;
+        padding: 50px 0 !important;
     }
 
     .products-wrapper {
         padding: 10px !important;
+    }
+
+    .products-list-wrapper {
+        display: block !important;
+    }
+
+    .products-list-item {
+        width: 100% !important;
+    }
+
+    .project-divider {
+        &.mobile {
+            display: block !important;
+        }
     }
 
     .our-team-section {
@@ -288,7 +343,7 @@ MEDIA QUERY FOR MOBILE AND SMALL TABLETS
         scale: 1 !important;
     }
 
-    .member-skills {
+    .custom-ul {
         height: auto !important;
         border-radius: 100px !important;
         border: none !important;
@@ -302,16 +357,21 @@ MEDIA QUERY FOR MOBILE AND SMALL TABLETS
         bottom: 80px !important;
         display: block !important;
     }
+
+    .inner-footer {
+        display: none;
+    }
 }
 
 /***********
 FONT FAMILY
 ************/
+//Calibri
 @font-face {
     font-family: 'Calibri-Regular';
     src: url('./assets/fonts/calibri/calibri-regular.eot'); /* IE9 Compat Modes */
     src: url('./assets/fonts/calibri/calibri-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        //  url('./assets/fonts/calibri/calibri-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/calibri/calibri-regular.woff2') format('woff2'), /* Super Modern Browsers */
          url('./assets/fonts/calibri/calibri-regular.woff') format('woff'), /* Pretty Modern Browsers */
          url('./assets/fonts/calibri/calibri-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('./assets/fonts/calibri/calibri-regular.svg#marker') format('svg'); /* Legacy iOS */
@@ -321,7 +381,7 @@ FONT FAMILY
     font-family: 'Calibri-Bold';
     src: url('./assets/fonts/calibri/calibri-bold.eot'); /* IE9 Compat Modes */
     src: url('./assets/fonts/calibri/calibri-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        //  url('./assets/fonts/calibri/calibri-bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/calibri/calibri-bold.woff2') format('woff2'), /* Super Modern Browsers */
          url('./assets/fonts/calibri/calibri-bold.woff') format('woff'), /* Pretty Modern Browsers */
          url('./assets/fonts/calibri/calibri-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('./assets/fonts/calibri/calibri-bold.svg#marker') format('svg'); /* Legacy iOS */
@@ -331,7 +391,7 @@ FONT FAMILY
     font-family: 'Calibri-Italic';
     src: url('./assets/fonts/calibri/calibri-italic.eot'); /* IE9 Compat Modes */
     src: url('./assets/fonts/calibri/calibri-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        //  url('./assets/fonts/calibri/calibri-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/calibri/calibri-italic.woff2') format('woff2'), /* Super Modern Browsers */
          url('./assets/fonts/calibri/calibri-italic.woff') format('woff'), /* Pretty Modern Browsers */
          url('./assets/fonts/calibri/calibri-italic.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('./assets/fonts/calibri/calibri-italic.svg#marker') format('svg'); /* Legacy iOS */
@@ -341,8 +401,29 @@ FONT FAMILY
     font-family: 'Calibri-Bold-Italic';
     src: url('./assets/fonts/calibri/calibri-bold-italic.eot'); /* IE9 Compat Modes */
     src: url('./assets/fonts/calibri/calibri-bold-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        //  url('./assets/fonts/calibri/calibri-bold-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/calibri/calibri-bold-italic.woff2') format('woff2'), /* Super Modern Browsers */
          url('./assets/fonts/calibri/calibri-bold-italic.woff') format('woff'), /* Pretty Modern Browsers */
          url('./assets/fonts/calibri/calibri-bold-italic.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('./assets/fonts/calibri/calibri-bold-italic.svg#marker') format('svg'); /* Legacy iOS */
+}
+
+// Californian FB
+@font-face {
+    font-family: 'Californian-FB';
+    src: url('./assets/fonts/californian-fb/californian-fb.eot'); /* IE9 Compat Modes */
+    src: url('./assets/fonts/californian-fb/californian-fb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./assets/fonts/californian-fb/californian-fb.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/californian-fb/californian-fb.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./assets/fonts/californian-fb/californian-fb.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./assets/fonts/californian-fb/californian-fb.svg#marker') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Californian-FB-Bold';
+    src: url('./assets/fonts/californian-fb/californian-fb-bold.eot'); /* IE9 Compat Modes */
+    src: url('./assets/fonts/californian-fb/californian-fb-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./assets/fonts/californian-fb/californian-fb-bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/fonts/californian-fb/californian-fb-bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./assets/fonts/californian-fb/californian-fb-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./assets/fonts/californian-fb/californian-fb-bold.svg#marker') format('svg'); /* Legacy iOS */
 }
