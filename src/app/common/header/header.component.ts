@@ -35,7 +35,7 @@ export class HeaderComponent implements OnInit {
     const sections = document.querySelectorAll(SECTION);
     const options = {
       root: null,
-      threshold: 0.4, // Trigger when 40% of the section is visible
+      threshold: 0.2, // Trigger when 40% of the section is visible
     };
 
     const observer = new IntersectionObserver((entries) => {
