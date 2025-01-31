@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HardwareComponent } from './hardware.component';
+import { ItComponent } from './it.component';
 
-describe('HardwareComponent', () => {
-  let component: HardwareComponent;
-  let fixture: ComponentFixture<HardwareComponent>;
+describe('ItComponent', () => {
+  let component: ItComponent;
+  let fixture: ComponentFixture<ItComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HardwareComponent]
+      imports: [ItComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(HardwareComponent);
+    fixture = TestBed.createComponent(ItComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { HardwareRoutingModule } from './hardware-routing.module';
+import { ItRoutingModule } from './it-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    HardwareRoutingModule
+    ItRoutingModule
   ]
 })
-export class HardwareModule { }
+export class ItModule { }
