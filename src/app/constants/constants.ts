@@ -1,5 +1,5 @@
 export const EMPTY_STRING = '';
-export const SOFTWARE = 'software-solutions';
+export const SOFTWARE_LINK = 'software-solutions';
 export const IT_SERVICES_LINK = 'it-services';
 export const SOFTWARE_HEADER = 'Software Solutions';
 export const IT_SERVICES_HEADER = 'IT services';
