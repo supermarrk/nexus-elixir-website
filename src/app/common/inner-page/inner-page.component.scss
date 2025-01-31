@@ -1,28 +1,18 @@
 
 .inner-container {
-    background: #262626;
     position: relative;
     height: calc(100% - 75px);
-    color: #ffffff;
+    color: #262626;
 }
 
 .inner-header {
     height: 75px;
     position: relative;
-}
-
-.inner-wrapper {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding-top: 20px;
-    height: calc(100% - 75px);
+    background: #262626;
 }
 
 .inner-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: #ffffff;
+    background: #262626;
     width: 100%;
     box-sizing: border-box;
     padding: 0 20px;
@@ -32,10 +22,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 30px;
+    height: 50px;
 }
 
 .footer-texts {
     font-family: 'Calibri-Regular';
-    color: #646464;
+    color: #ffffff;
 }

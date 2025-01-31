@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HardwareComponent } from './hardware.component';
 
 const routes: Routes = [{
-  path: 'products/hardware',
+  path: 'products/it-services',
   component: HardwareComponent,
   children: [
     {
-      path: 'products/hardware',
+      path: 'products/it-services',
       component: HardwareComponent
     }
   ]

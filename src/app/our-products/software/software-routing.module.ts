@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { SoftwareComponent } from './software.component';
 
 const routes: Routes = [{
-  path: 'products/software',
+  path: 'products/software-solutions',
   component: SoftwareComponent,
   children: [
     {
-      path: 'products/software',
+      path: 'products/software-solutions',
       component: SoftwareComponent
     }
   ]

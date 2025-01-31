@@ -4,6 +4,7 @@
     left: 0;
     right: 0;
     margin: auto;
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 01));
 }
 
 .inner-nav {
@@ -25,7 +26,7 @@
         list-style: none;
         cursor: pointer;
         font-size: clamp(16px, 1.5vw, 26px);
-        color: #646464;
+        color: #ffffff;
         position: relative;
         &:last-child {
             text-transform: capitalize;
@@ -37,6 +38,7 @@
     position: absolute;
     top: 0;
     height: 100%;
+    filter: brightness(0) invert(1);
     &.left {
         left: -50px;
         -webkit-transform: scaleX(-1);

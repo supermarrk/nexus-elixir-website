@@ -9,11 +9,11 @@ export const routes: Routes = [
         component: HomeComponent 
     },
     { 
-        path: 'products/hardware', 
+        path: 'products/it-services', 
         component: HardwareComponent 
     },
     { 
-        path: 'products/software', 
+        path: 'products/software-solutions', 
         component: SoftwareComponent 
     },
     {
